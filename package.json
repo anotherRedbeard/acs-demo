@@ -1,0 +1,23 @@
+{
+  "name": "acscallingfundamentals",
+  "version": "1.0.0",
+  "description": "ACS fundamentals node.js app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "@azure/communication-calling": "^1.6.3",
+    "@azure/communication-common": "^2.0.0",
+    "@azure/communication-identity": "^1.0.0"
+  }
+}

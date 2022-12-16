@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACS Calling Fundamentals</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+
+    <h2>ACS Calling Fundamentals</h2>
+
+    <b>Display Name:</b>
+    <br />
+    <input id="display-name-input"
+           type="text"
+           class="input-text"
+           placeholder="Display name"
+           style="width: 300px;" />
+    <br />
+    <b>ACS Identity:</b> Leave blank to create new.
+    <br />
+    <input id="acs-identity-input"
+           type="text"
+           class="input-text"
+           placeholder=""
+           style="width: 650px;" />
+    <br />
+    <button id="create-call-agent-button" type="button">Create Call Agent</button>
+
+    <h3>&nbsp;</h3>
+
+    <input id="call-user-id-input"
+           type="text"
+           class="input-text"
+           placeholder="User id"
+           style="width: 650px;" />
+           <br />
+           <button id="call-user-button" type="button" disabled>Call User</button>
+    <button id="accept-call-button" type="button" disabled>Accept Call</button>
+    <button id="reject-call-button" type="button" disabled>Reject Call</button>
+
+    <h3>&nbsp;</h3>
+
+    <input id="teams-link-input"
+           type="text"
+           class="input-text"
+           placeholder="Teams meeting link"
+           style="width: 650px;" />
+           <br />
+    <button id="join-meeting-button" type="button" disabled>Join Teams Meeting</button>
+
+    <h3>&nbsp;</h3>
+
+    <button id="hang-up-button" type="button" disabled>Hang Up</button>
+    <button id="mute-button" type="button" disabled>Mute</button>
+    <button id="unmute-button" type="button" disabled>Unmute</button>
+    <p></p>
+    <button id="start-video-button" type="button" disabled>Start Video</button>
+    <button id="stop-video-button" type="button" disabled>Stop Video</button>
+    <button id="get-participants-button" type="button" disabled>Get Participants</button>
+
+    <table>
+        <tr valign="top">
+            <td>
+                Local Preview
+                <div id="video-preview" style="height:200px; width:400px"></div>
+                <div id="video-preview-2" style="height:200px; width:400px">
+                    <video id="video-preview-copy" style="height:200px; width:400px" playsinline autoplay muted></video>
+                </div>
+            </td>
+            <td>
+                Remote Video
+                <div id="remote-video" style="height:200px; width:400px"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
